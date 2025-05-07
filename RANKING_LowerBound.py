@@ -1,6 +1,6 @@
 '''
 Code that accepts an adjacenecy matrix as input and returns a matching
-It can also return the size of the matching?
+It simulates RANKING on a set of alpha,beta graphs
 '''
 
 import random
@@ -82,8 +82,8 @@ class RANKING:
 if __name__ == "__main__":
 
     outputFile = "results.csv"
-    n = 1000
-    numIterations = 250
+    n = 10000
+    numIterations = 2500
     with open(outputFile, mode="a", newline="") as file:
         writer = csv.writer(file)
         file.seek(0, 2)  # Move to the end of the file to check if it's empty
